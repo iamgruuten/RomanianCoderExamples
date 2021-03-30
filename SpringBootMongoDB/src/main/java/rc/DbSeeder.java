@@ -48,6 +48,6 @@ public class DbSeeder implements CommandLineRunner {
 
         //add our hotels to the database
         List<Hotel> hotels = Arrays.asList(marriot, ibis, sofitel);
-        this.hotelRepository.save(hotels);
+        this.hotelRepository.saveAll(hotels);
     }
 }
